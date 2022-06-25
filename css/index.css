@@ -1,0 +1,214 @@
+.navbar{
+    height: 100px ;
+    background-color: rgb(172, 167, 167);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+.navbar img{
+    width: 45%;
+    height: auto;
+}
+
+.nav-link{
+    font-size: 19px;
+}
+.mt-4{
+  padding-top: 3%;
+}
+.protocol{
+    font-size: 12px;
+    display: flex;
+    vertical-align: middle;
+    width: 100%;
+    background-color: rgb(240, 235, 235);
+}
+.protocol p{
+    margin-left: 22%;
+    margin-top: 9%;
+    display: block;
+    font-weight: bold;
+    color: gray;
+}
+
+.protocol a{
+   text-decoration: none;
+   transition: 0.3s;
+}
+.protocol a:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color: rgb(17, 81, 201);
+ }
+
+.formulario{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 340px;
+    background-image: url("../img/background.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: #004cfe;
+}
+
+#procura-corrida{
+    padding: 2% 0 2% 0;
+    width: 100%;
+    text-align: center;
+}
+.procura{
+    color: aliceblue;
+    display: inline;
+    margin-left: 2%;
+}
+
+.procura i{
+    font-size: 18pt;
+    padding: 4px;
+
+}
+
+#saida, #chegada{
+    padding: 4px;
+    padding-left:10px;
+    width: 20%;
+    border: none;
+    box-shadow: 4px 2px 2px rgb(23, 11, 189);
+    border-radius: 5px;
+}
+
+#botao{
+    width: 7%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 2px 2px rgb(23, 11, 189);
+    padding: 5px;
+    margin-left: 2%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004cfe;
+    background-color: antiquewhite;
+    transition: 0.3s ease-in-out;
+}
+#botao:hover{
+    transform: scale(1.07);
+    background-color: rgb(194, 191, 187);
+    color: antiquewhite;
+    background-color: #052570;
+}
+.mensagens{
+    width: 100%;
+}
+.mensagem:nth-child(1){
+    margin-left: 6%;
+}
+.mensagem{
+    display:inline-table;
+    font-family: monospace;
+    margin-top: 3%;
+    margin-right: 4%;
+    margin-bottom: 3%;
+    width: 27%;
+    color: rgba(91, 94, 94, 0.76);
+}
+
+.mensagem i{
+    font-size: 35px;
+    padding: 20px 0 20px 0;
+}
+.texto-animado{
+    background-color: #004cfe;
+    width: 100%;
+    height: 350px;
+    font-family: monospace;
+    color: #bdd1ff;
+    font-size: 4em;
+    filter: contrast(1);
+}
+.word{
+    position:absolute;
+    padding-left: 10%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: switch 8s infinite ease-in-out;
+    min-width: 100%;
+    margin:auto;
+}
+.word:nth-child(1){
+    animation-delay: -9s;
+}
+.word:nth-child(2){
+    animation-delay: -8s;
+}
+.word:nth-child(3){
+    animation-delay: -7s;
+}
+.word:nth-child(4){
+    animation-delay: -6s;
+}
+.imagem-fundo{
+    height: 350px;
+    background-image: url("../img/imagem-fundo.png");
+    background-size: 45%;
+    background-position: right;
+    background-repeat: no-repeat;
+    filter: none;
+}
+.opcao{
+    display: flex;
+    align-items: center;
+}
+.opcao img{
+    padding: 10% 0 0 0;
+}
+.opcao-texto{
+    float: right;
+    margin-left: 10%;
+}
+.opcao-texto h3{
+    color: #004cfe;
+    font-family: monospace;
+    padding-bottom: 8%;
+}
+.opcao-texto a{
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid #004cfe ;
+    background-color: #004cfe;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    margin-right: 3%;
+    transition: 0.3s ease-in-out;
+}
+.opcao-texto a:hover{
+    background-color: #042572;
+}
+@keyframes switch{
+    0%,
+    5%,
+    100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    50%,
+    80%{
+        filter: blur(180px);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    .navbar {
+        height: auto;
+    }
+    .mt-4{
+        padding-top: 10%;
+      }
+}
+
+
