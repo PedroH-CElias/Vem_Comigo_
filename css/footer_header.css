@@ -1,0 +1,117 @@
+/*header*/
+.navbar{
+    background-color: #79a0fa;
+    height: auto;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    padding: 25px;
+}
+.navbar img{
+    width: 38%;
+    height: auto;
+}
+
+.nav-link{
+    font-size: 16px;
+    font-weight: bold;
+}
+.dropdown-item{
+    font-size: 14px;
+}
+.mt-4{
+  padding-top: 3%;
+}
+.protocol{
+    font-size: 12px;
+    display: flex;
+    vertical-align: middle;
+    width: 100%;
+    background-color: rgb(240, 235, 235);
+}
+.protocol p{
+    margin-left: 22%;
+    margin-top: 8%;
+    display: block;
+    font-weight: bold;
+    color: gray;
+}
+
+.protocol a{
+   text-decoration: none;
+   transition: 0.3s;
+}
+.protocol a:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color: rgb(17, 81, 201);
+ }
+
+ /*footer*/
+ .back-to-top {
+    background-color: rgb(17, 0, 255);
+    border-radius: 65px;
+    bottom: 14px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    color: #ffffff;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 40px;
+    z-index: 3;
+ }
+.back-to-top::after {
+      content: '▲';
+      display: flex;
+      justify-content: center;
+      padding-left: 1px;
+      padding-top: 7px;
+}
+.back-to-top:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(9, 2, 104) ;
+}
+ footer{
+    background-color: #79a0fa;
+    bottom: 0;
+    width: 100%;
+}
+.footer{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;/*Alinha no centro da classe pai*/
+    justify-content: center;
+    align-items: center;/*Fim*/
+    flex-direction: column/*Alinha em coluna*/
+}
+.footer img{
+    width: 17%;
+}
+.texto{
+    padding-top:1%;
+}
+.texto p{
+    font-size: 11pt;
+    text-align: center;
+    color: #004cfe;
+}
+.links{
+    width: 30%;
+    display: flex;/*Alinha no centro da classe pai*/
+    justify-content: center;
+    align-items: center;/*Fim*/
+}
+.links a{
+    width: 11.5%;
+    height: auto;
+    margin-left: 1%;
+}
+.links img{
+    transition: 0.3s ease-in-out;
+    width: 46%;
+}
+.links a:hover>img{
+    transform: scale(1.15);
+}

@@ -1,0 +1,60 @@
+.formulario{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 340px;
+    background-image: url("../img/background.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: #004cfe;
+}
+input:focus{
+    outline: 2px solid #069bb6;
+}
+#procura-corrida{
+    padding: 2% 0 2% 0;
+    width: 100%;
+    text-align: center;
+}
+.procura{
+    color: aliceblue;
+    display: inline;
+    margin-left: 2%;
+}
+
+.procura i{
+    font-size: 18pt;
+    padding: 4px;
+
+}
+
+#saida, #chegada{
+    padding: 4px;
+    padding-left:10px;
+    width: 20%;
+    border: none;
+    box-shadow: 4px 2px 2px rgb(23, 11, 189);
+    border-radius: 5px;
+}
+
+#botao{
+    width: 7%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 2px 2px rgb(23, 11, 189);
+    padding: 5px;
+    margin-left: 2%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004cfe;
+    background-color: antiquewhite;
+    transition: 0.3s ease-in-out;
+}
+#botao:hover{
+    transform: scale(1.07);
+    background-color: rgb(194, 191, 187);
+    color: antiquewhite;
+    background-color: #069bb6;
+}

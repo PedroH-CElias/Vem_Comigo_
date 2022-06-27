@@ -1,0 +1,31 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+main{
+    margin:5% 0 5% 0;
+}
+.link-registro{
+    color: rgb(17, 81, 201);
+    text-decoration: none;
+}
+.link-registro:hover{
+    color: rgb(3, 53, 141);
+}
+.logar{
+    font-family: monospace;
+    padding: 20px;
+    color: rgb(17, 81, 201);
+}
+
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
