@@ -1,3 +1,16 @@
+<?php
+if (isset($_POST["submit"])) {
+    include_once("conecta.php");
+    $nome = ($_POST["nome"]);
+    $email = ($_POST["email"]);
+    $senha = ($_POST["senha"]);
+    $resultado = mysqli_query($conexao = abreConexao(), "INSERT INTO usuario(cod, nome, email, senha) VALUES('DEFAULT','$nome', '$email', '$senha')");
+    echo $resultado;
+?>
+    <meta http-equiv="refresh" content="1; URL='login.php?mensagem=ui'" /><?php
+                                                                        }
+
+                                                                            ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,52 +43,38 @@
                                     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                                         <h1 class="titulo-cadastro">Cadastrar</h1>
 
-                                        <form class="mx-1 mx-md-4">
+                                        <form action="cadastro.php" method="post" class="mx-1 mx-md-4">
 
-                                            <div class="d-flex flex-row align-items-center mb-4" >
+                                            <div class="d-flex flex-row align-items-center mb-4">
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <input type="text" id="form3Example1c" class="form-control" placeholder="Digite seu nome" />
+                                                    <input type="text" id="form3Example1c" name="nome" class="form-control" placeholder="Digite seu nome" required />
                                                     <label class="form-label" for="form3Example1c">Nome</label>
                                                 </div>
                                             </div>
 
-                                            <div class="d-flex flex-row align-items-center mb-4" >
+                                            <div class="d-flex flex-row align-items-center mb-4">
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <input type="email" id="form3Example3c" class="form-control" placeholder="Digite seu email" />
+                                                    <input type="email" id="form3Example3c" name="email" class="form-control" placeholder="Digite seu email" />
                                                     <label class="form-label" for="form3Example3c">Email</label>
                                                 </div>
                                             </div>
-                                            <div class="d-flex flex-row align-items-center mb-4" >
+                                            <div class="d-flex flex-row align-items-center mb-4">
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <input type="text" id="form3Example1c" class="form-control" placeholder="XXX.XXX.XXX-XX" />
-                                                    <label class="form-label" for="form3Example1c">Cpf</label>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row align-items-center mb-4" >
-                                                <div class="form-outline flex-fill mb-0">
-                                                    <input type="password" id="form3Example4c" class="form-control" placeholder="Digite sua senha" />
+                                                    <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha" required />
                                                     <label class="form-label" for="form3Example4c">Senha</label>
                                                 </div>
                                             </div>
 
-                                            <div class="d-flex flex-row align-items-center mb-4" >
-                                                <div class="form-outline flex-fill mb-0">
-                                                    <input type="password" id="form3Example4cd" class="form-control" placeholder="Digite sua senha novamente" />
-                                                    <label class="form-label" for="form3Example4cd">Confirme sua senha</label>
-                                                </div>
-                                            </div>
-
                                             <div class="form-check d-flex justify-content-center mb-5">
-                                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                                                <input class="form-check-input me-2" type="checkbox" required value="" id="form2Example3c" />
                                                 <label class="form-check-label" for="form2Example3">
-                                                    Eu concordo com todos <a href="termos.html">termos de serviço</a>
+                                                    Eu concordo com todos <a href="termos.html" target="_blank">termos de serviço</a>
                                                 </label>
                                             </div>
-
-                                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                                <button type="button" class="btn btn-primary btn-lg">Registrar</button>
+                                            <div class="text-center text-lg-start mt-4 pt-2">
+                                                <input type="submit" name="submit" id="submit" class="botao" style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                                                <p class="small fw-bold mt-2 pt-1 mb-0">Ja possui uma conta? <a href="login.php" class="link-registro">Logar</a></p>
                                             </div>
-
                                         </form>
 
                                     </div>

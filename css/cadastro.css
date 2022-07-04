@@ -1,8 +1,36 @@
 main{
-    margin: 3% 0 15% 0;
+    margin: 3% 0 20% 0;
+}
+.botao{
+    font-family: monospace;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(17, 81, 201);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 2px 2px grey;
+    transition: 0.3s ease-in-out;
+}
+.botao:hover{
+    transform: scale(1.05);
+    background-color: rgb(3, 44, 121);
 }
 .titulo-cadastro{
     font-family: monospace;
     padding: 40px;
     color: rgb(17, 81, 201);
+}
+.senha-invalida{
+    width: 80%;
+    transition: .3s;
+    opacity: 0%;
+    visibility: hidden;
+}
+.senha-invalida-pos{
+    width: 80%;
+    transition: .3s;
+    color: red;
+    opacity: 100%;
+    visibility: visible;
 }

@@ -1,0 +1,87 @@
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    .cabecalho{
+        display: flex;
+        background-color: #4835d4;
+        align-items: center;
+    }
+    .cabecalho img{
+        width: 20%;
+        margin-left: 8%;
+        border: 2px solid #4835d4;
+        border-radius: 20px;
+    }
+    .cabecalho h1{
+        color: white;
+        font-size: 30px;
+        font-family: monospace;
+        margin-left: 5%;
+    }
+
+    main{
+        margin: 2% 0 10% 0;
+    }
+    .form-control,.form-label{
+        font-size: 15px;
+    }
+    .button{
+        font-family: monospace;
+        font-weight: bold;
+        border: none;
+        box-shadow: 5px 2px 2px rgb(13, 3, 158);
+        font-size: 18px;
+        color: rgb(40, 31, 161);
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+        transition: 0.3s ease-in-out;
+    }
+    .button:hover{
+        background-color: rgb(13, 3, 158);
+        box-shadow: 5px 2px 2px rgb(20, 20, 49);
+        color: white;
+        transform: scale(1.1);
+    }
+    .botao{
+        width: 8%;
+        padding: 2px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #4835d4;
+        color: white;
+        border: none;
+        box-shadow: 5px 2px 2px grey;
+        transition: 0.3s ease-in-out;
+    }
+    .botao:hover{
+        background-color: #1d0e8a;
+        transform: scale(1.05);
+    }
+    .bg-indigo {
+    background-color: #4835d4;
+    }
+    @media (min-width: 992px) {
+    .card-registration-2 .bg-indigo {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    }
+    @media (max-width: 991px) {
+    .card-registration-2 .bg-indigo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    }

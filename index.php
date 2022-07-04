@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+if ($_SESSION['login'] == true) {
+} else {
+  header("Location:login.php?mensagem=nl");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +29,7 @@
 
 <body>
   <?php
-  include_once("header.php");
+  include_once("header_logado.php");
   ?>
   <!-- Page Content -->
   <main>
@@ -63,8 +73,8 @@
       <img src="img/vemcomigo.png" alt="">
       <div class="opcao-texto">
         <h3>Quer economizar dinheiro?</h3>
-        <a href="#">Oferecer Carona</a>
-        <a href="#">Ver caronas disponíveis</a>
+        <a href="oferecer_carona.php">Oferecer Carona</a>
+        <a href="listaDeCaronas.php">Ver caronas disponíveis</a>
       </div>
     </div>
   </main>
