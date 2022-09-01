@@ -44,7 +44,7 @@ if ($_SESSION['login'] == true) {
         <h3> Pediu carona na concorrência e estava mais caro que habitual? Foi abastecer seu veículo e o valor cobrado foi de um aluguel? Xiiiiii</h3>
 
         <p>Não criemos pânico, saia de fininho e <b>Vem Comigo! </b>. Aqui você divide o valor de uma carona local com outras pessoas, fazendo bem para seu bolso e para o bolso dos outros ocupantes.
-          Vem com a gente! Em tempos como esse, nada melhor que uma solução rápida, prática e barata. A idéia aqui é que todos cheguem em segurança no destino e felizes.</p>
+          Vem com a gente! Em tempos como esse, nada melhor que uma solução rápida!</p>
       </div>
       <div class="mensagem">
         <i class="fa-solid fa-shield"></i>

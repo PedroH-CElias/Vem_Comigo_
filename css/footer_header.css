@@ -1,11 +1,16 @@
 /*header*/
+header{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   z-index: 1;
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
 .navbar {
     background-color: #79a0fa;
-    height: auto;
     display: flex;
-    position: fixed;
-    z-index: 1;
-    top: 0;
     width: 100%;
     padding: 25px;
 }
@@ -31,22 +36,22 @@
 }
 
 .protocol {
-    font-size: 12px;
+    height: auto;
     display: flex;
-    vertical-align: middle;
+    align-items: center;
     width: 100%;
     background-color: rgb(240, 235, 235);
 }
 
 .protocol p {
+    font-size: 12px;
     margin-left: 22%;
-    margin-top: 8%;
-    display: block;
     font-weight: bold;
     color: gray;
 }
 
 .protocol a {
+    margin-top: auto;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -139,14 +144,19 @@ footer {
 .links a:hover>img {
     transform: scale(1.15);
 }
-
+.controle{
+    min-height: 100px;
+}
 @media screen and (max-width: 420px) {
+    .navbar img{
+        width: 80%;
+    }
     .links img {
         width: 70%;
     }
 
     #imgfooter {
-        width: 12%;
+        width: 70%;
         margin: 0 0 5% 0;
     }
 
@@ -154,8 +164,13 @@ footer {
         width: 100%;
         padding-left: 10%;
     }
-
+    .links img{
+        width: 100%;
+    }
     .links {
         margin-top: 2%;
+    }
+    .controle{
+        min-height: 200px;
     }
 }

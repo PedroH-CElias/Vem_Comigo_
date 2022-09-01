@@ -4,7 +4,10 @@ if (isset($_POST["submit"])) {
     $nome = ($_POST["nome"]);
     $email = ($_POST["email"]);
     $senha = ($_POST["senha"]);
-    $resultado = mysqli_query($conexao = abreConexao(), "INSERT INTO usuario(cod, nome, email, senha) VALUES('DEFAULT','$nome', '$email', '$senha')");
+    $data = ($_POST["dataNas"]);
+    $foto = ($_FILES["foto"]["type"]);
+    $cpf = ($_POST["cpf"]);
+    $resultado = mysqli_query($conexao = abreConexao(), "INSERT INTO usuario(cod,nome, email, cpf, dataNas, foto, senha) VALUES('DEFAULT','$nome', '$email','$cpf','$data','$foto','$senha')");
     echo $resultado;
 ?>
     <meta http-equiv="refresh" content="1; URL='login.php?mensagem=ui'" /><?php
@@ -43,7 +46,7 @@ if (isset($_POST["submit"])) {
                                     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                                         <h1 class="titulo-cadastro">Cadastrar</h1>
 
-                                        <form action="cadastro.php" method="post" class="mx-1 mx-md-4">
+                                        <form action="cadastro.php" method="POST" enctype="multipart/form-data" class="mx-1 mx-md-4">
 
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <div class="form-outline flex-fill mb-0">
@@ -54,14 +57,38 @@ if (isset($_POST["submit"])) {
 
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <input type="email" id="form3Example3c" name="email" class="form-control" placeholder="Digite seu email" />
+                                                    <input type="email" id="form3Example3c" name="email" class="form-control" placeholder="Digite seu email" required/>
                                                     <label class="form-label" for="form3Example3c">Email</label>
                                                 </div>
                                             </div>
                                             <div class="d-flex flex-row align-items-center mb-4">
                                                 <div class="form-outline flex-fill mb-0">
-                                                    <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite sua senha" required />
+                                                    <input type="date" id="form3Example3c" name="dataNas" class="form-control" required/>
+                                                    <label class="form-label" for="form3Example3c">Data de nascimento</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <input type="text" size="11" maxlength="11" minlength="11" id="form3Example3c" name="cpf" class="form-control" placeholder="Digite seu cpf (Apenas números)" required/>
+                                                    <label class="form-label" for="form3Example3c">Cpf</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <input type="file" accept="image/*" id="form3Example3c" name="foto" class="form-control"/>
+                                                    <label class="form-label" for="form3Example3c">Foto de perfil</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <input type="password" minlength="8" id="senha" name="senha" class="form-control" placeholder="Digite sua senha" required />
                                                     <label class="form-label" for="form3Example4c">Senha</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <input type="password" minlength="8" id="senhaConfirmada" name="senhaConfirmada" class="form-control" placeholder="Digite sua senha novamente" required />
+                                                    <label class="form-label" for="form3Example4c">Confirme sua senha</label>
                                                 </div>
                                             </div>
 

@@ -13,7 +13,7 @@
 
     <?php include_once("header_logado.php"); ?>
 
-    <div class="container">
+    <div class="principal">
         <div class="text-center">
             <h1>Caronas Cadastradas</h1>
         </div>

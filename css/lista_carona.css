@@ -1,3 +1,11 @@
+.text-center{
+    margin-top: 3%;
+}
+.principal{
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+}
 h1{
     font-family: monospace;
     padding: 20px;
@@ -6,4 +14,11 @@ h1{
 .btn-group{
     padding: 10px;
     padding-bottom: 5%;
+}
+
+@media screen and (max-width: 420px) {
+    .principal{
+        margin-top: 10%;
+        min-height: 100vh;
+    }
 }

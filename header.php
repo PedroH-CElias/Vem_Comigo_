@@ -29,7 +29,8 @@
       </div>
     </div>
   </nav>
+  <div class="protocol">
+    <p><i class="fa-solid fa-triangle-exclamation"></i> Protocolo Coronavírus!<a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2022/janeiro/ministerio-da-saude-reduz-para-7-dias-o-isolamento-de-casos-por-covid-19/apresentacao-da-coletiva-de-imprensa-ministerio-da-saude-reduz-para-7-dias-o-isolamento-de-casos-por-covid-19.pdf" target="_blank"> Clique aqui</a> e saiba mais!</p>
+  </div>
 </header>
-<span class="protocol">
-  <p><i class="fa-solid fa-triangle-exclamation"></i> Protocolo Coronavírus!<a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2022/janeiro/ministerio-da-saude-reduz-para-7-dias-o-isolamento-de-casos-por-covid-19/apresentacao-da-coletiva-de-imprensa-ministerio-da-saude-reduz-para-7-dias-o-isolamento-de-casos-por-covid-19.pdf" target="_blank"> Clique aqui</a> e saiba mais!</p>
-</span>
+<div class="controle"></div>

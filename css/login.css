@@ -7,7 +7,7 @@
 }
 
 main {
-    margin: 5% 0 5% 0;
+    margin: 5% 0 3% 0;
 }
 
 .link-registro {
@@ -39,5 +39,8 @@ main {
 @media (max-width: 450px) {
     .h-custom {
         height: 100%;
+    }
+    main{
+        margin: 5% 0 15% 0;
     }
 }
